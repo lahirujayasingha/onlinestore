@@ -1,0 +1,495 @@
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: #f2f1f6;
+    color: #efebeb;
+}
+
+header {
+    background-color: #22096d;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+
+}
+
+nav ul li a:hover {
+    color: #00aaff;
+}
+/* Styles for the products section */
+#products {
+    margin: 20px;
+}
+
+.product-list {
+    display: flex;
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 150px;
+}
+
+.product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for the cart section */
+/* Cart indicator styles */
+#cart-indicator {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    color: white;}
+
+
+
+
+
+
+#cart {
+    margin: 20px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin: 10px 0;
+}
+#sidebar {
+    position: fixed;
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #202020;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+#sidebar button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px 10px;
+    background-color: #f1ecf1;
+    color: rgb(11, 10, 10);
+    border: none;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#sidebar button:hover {
+    background-color: #0088cc;
+}
+
+#main-content {
+    margin-left: 220px; /* Adjust based on sidebar width */
+    padding: 20px;
+}
+
+
+#home {
+    background: url('https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-attachment: fixed;
+}
+
+#home h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+#home button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #3d0898;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#home button:hover {
+    background-color: #0088cc;
+}
+
+
+
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#about {
+    background-color: #333030;
+}
+
+#about h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#about .history {
+    background-color: #303030;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+#about .history h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#about .history p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#about .team {
+    margin-top: 40px;
+    text-align: left;
+}
+
+#about .team h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#about .team-member {
+    display: inline-block;
+    width: 45%;
+    margin: 20px 2.5%;
+    vertical-align: top;
+    background-color: #e0dada;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+    
+}
+
+#about .team-member:hover {
+    transform: translateY(-10px);
+    background-color: #121111;
+   
+}
+
+#about .team-member img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+#about .team-member h4 {
+    margin: 20px 0 10px 0;
+    font-size: 22px;
+   
+}
+
+#about .team-member p {
+    font-size: 18px;
+    color: #111010;
+   
+}
+
+#products {
+    background-color: #303030;
+    padding: 80px 20px;
+}
+
+#products h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.product-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 2%;
+    vertical-align: top;
+    background-color: #3a3a3a;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+    background-color: #444;
+}
+
+.product-item img {
+    max-width: 70%;
+    border-radius: 20px;
+}
+
+.product-item h3 {
+    margin: 20px 0 10px 0;
+    font-size: 24px;
+}
+
+.product-item p {
+    font-size: 15px;
+}
+
+#services {
+    background-color: #202020;
+    padding: 80px 20px;
+}
+
+#services h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.service-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 2%;
+    vertical-align: top;
+    background-color: #3a3a3a;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    background-color: #444;
+}
+
+.service-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.service-item h3 {
+    margin: 20px 0 10px 0;
+    font-size: 24px;
+}
+
+.service-item p {
+    font-size: 18px;
+}
+
+#testimonials {
+    background-color: #282828;
+    padding: 80px 20px;
+}
+
+#testimonials h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.testimonial-item {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #3a3a3a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.testimonial-item p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.testimonial-item h4 {
+    margin-top: 10px;
+    text-align: right;
+    font-size: 20px;
+    color: #00aaff;
+}
+
+#contact {
+    background-color: #202020;
+}
+
+#contact h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #181818;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0088cc;
+}
+
+footer {
+    background-color: #202020;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+#featured {
+    background-color: #181818;
+    padding: 60px 20px;
+}
+
+#featured h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.carousel {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.carousel-item {
+    width: 30%;
+    background-color: #3a3a3a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.carousel-item h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.carousel-item p {
+    font-size: 18px;
+}
+
+</style>

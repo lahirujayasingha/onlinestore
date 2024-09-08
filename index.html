@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Computer Accessories Destination in Sri Lanka</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div id="cart-indicator">
+                🛒 Cart: <span id="cart-count">0</span> items ($<span id="cart-total">0.00</span>)
+            </div>
+
+            
+        </nav>
+    </header>
+    <!-- Search Bar Section -->
+    <section id="search">
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Search for products..." />
+            <button type="submit">Search</button>
+        </form>
+    </section>
+    
+    
+    <div id="sidebar">
+        <button>Lap Tops</button>
+        <button>Monitors and Accessories</button>
+        <button>Os and Software</button>
+        <button>Processors</button>
+        <button>Motherboards</button>
+        <button>Memory(RAM)</button>
+        <button>Cooling and Lighting</button>
+        <button>Cable and Connectors</button>
+        <button>Graphic Cards</button>
+        <button>Power supply</button>
+        <button>Graphics Tablet</button>
+    </div>
+
+    <section id="home">
+        <div>
+            <h1>Welcome to Hiru computers</h1>
+            <p>Your one-stop shop for high-quality computer accessories in Sri Lanka.</p>
+            <button>Shop Now</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Hiru computers, we offer a wide range of computer accessories to enhance your computing experience. With years of experience and a dedicated team, we strive to provide the best products and services in Sri Lanka.</p>
+        <img src="https://www.marketingdonut.co.uk/sites/default/files/production/image/computershop.jpg" alt="About Hiru computers">
+        <div class="history">
+            <h3>Our History</h3>
+            <p>Founded in 2010, TechZone has been a pioneer in providing top-notch computer accessories to tech enthusiasts and professionals across Sri Lanka. Our mission is to deliver cutting-edge products and unparalleled customer service.</p>
+        </div>
+        <div class="team">
+            <h3>Meet Our Team</h3>
+            <div class="team-member">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxEQEBATEhIQFhUSEhAaFhUQDQ8VEhIQGREYFhYVFRgYHCggGBslHhUWITIhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0lHSI1Ky0vKy4tLSsrLS8tNS0tLS0tLSstLS0tNS0tLS0tKy0tLS0tLS0rLS0rLS0tLS0tK//AABEIAPMAzwMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABAcFBgECAwj/xABFEAABAwICBQcICAUCBwAAAAABAAIDBBEFIQYSMUFRBxNhcYGRoRUyQlJTk7HBIiNiY3KSotEUQ1SCshaUM0Rzg9Lh8P/EABoBAQADAQEBAAAAAAAAAAAAAAABAwQCBQb/xAApEQEBAAIBBAEDAgcAAAAAAAAAAQIRAxIhMUETBFFhFCIFFSMkMkJS/9oADAMBAAIRAxEAPwC6UREBERAREQEREBERAREQEREBERAREQEXBNsz4rQ9MeUynpNaOntNNn5p+qjP2nbz0BBvqKHg1UZqaCU7ZIo3G2y7mA/NTEBERAREQEREBERAREQERcOcACSQANpJyCATZVrpZyrxwOdFSMbK5psZHE80D0AZu8Ashyn6SMjw+VsE0ZfK4MPNytLmsPnbDlkLdqoRBuFXylYnIb8+GdEcbQF4RcoWJtN/4p5/E1pHwWrogsbC+V+sjsJooZRxF43d4uPBbbh/K7QyW51k0R6Wh7e9ufgqMRB9IU+nuGP2VUQ6HktPipJ0vw/+rp/ehfMy4QfRtXyhYZH/AMyx3/TDnnwC1jFuWKBoIpoHvO50rgxncLk+CppEGy6Q6dV1bcPl1GH+XFdre3eVrSLhB9L6Aya2GUJ+4jHcNX5LPrB6EU5iw2iYdop4yRwJbrfNZxAREQEREBERAREQEREBUfyuaVSS1L6SN5EUNg8NcRzktrm9toF7W61eC+V8cmMlVUOO100p/WUEJEXaKNziA0Ek7mgk+CDqinSYNUtF3QTAcTE+3wUEiyiWVNlgiIpQIiICIiAsxojgrq6rhhAJBcC88Ixm4n4dqxMUZc5rRa7iALmwuTbNfRHJ/ogzDYLkh00oBe8bLbmt6B4oNpjYGgAbAAB1ALsiICIiAiIgIiICIiAiIgL5WxqPUqahvCaUfrK+qV81coFNzWJ1rfvS4dTgHD4oNfVi8lsQ5qd2qL84AHWztqjK6r2CF0j2saLue4AAbyTYK6dH8JbSQMiGZGbj6zztKz/UZax0v4Md5bZJYnF9HaaqB5yMB3rss147d/assixS2eGuyXyqnHNCKinu6P62Pi0WeB9pu/rC1dwINiCCNxGYV/LH1+C00/8AxYWOPHVs7vGa04fU3/ZRl9PPSkUVpVHJ/Ru80zs6GStI/W0leA5Oab21T+aH/wAFb+owVfBmrRFa8OgdC0Ztld0umcD+mwWlaaaPNopGc2XGOQG2sblpG0X3rrHmxyuojLiyxm6126+psAm16WncfShjP6Qvlgr6k0aZq0dKOEMX+IVqpkkREBERAREQEREBERAREQFQXLJTamKOd7SGF3aAWH/FX6qa5dqe1RSSetE9p/tcCP8AIoNd5NKESVL5CL8yzLoe7K/dfvVoKsdBsepaOKczPs5zm2a1rnOIA6OldZ8VrKpznQur3gk2EMOpG0XyFx8ysfJhcs2vjzmOK0EVUx+Wo8w2s7bP8DdZnBtN5I3Flex0dgLOMD2uvwcPmq7w31du5yz3NN9RYmm0mopPNqYOp0jWnudYpU6TUUfnVMHU2Rrz3NuVX037LOqfdlkWk4vptzjQ2gZLJJrC5/hnubq2Oy2+9lhnVWOuz1KkdAiiHgRdWTht89nF5ZPHdZ60/lMonPpmSNF+afd34XZX77d6106T4rTZzMkt99TWH5mgBbZS6T0VZAY3Ssa+WMtcyQ6v0i2xAJyKmYZYWZeXNzmcsVTCzWc0cSB3my+rKCPViibwYwfpC+ZNHaQvraePeZ2A9j8/gvqEBb2JyiIgIiICIiAiIgIiICIiAqu5dorwUrvVlcD1Fh+YCtFaTyr4RJVUWrEwveJGEBu218/Bc5XScZtU3J3gcdRPI+UBzYQ0hp2OeTkTxtZXFRU7BG+R+UcTSbNFsgL5KteT+llpamaGZhY6SJrmh1sw11j/AJBWRSVWprAgOa4EOad4WTkynyd/DXhL0dvLXsH00jmq2U8lMxjZQCwtfdwB80usT3ZLMYvh8by+KRrXtzFnC+X7qFhuj9DTTmeGJ+vckB7m6rDxFhc9pU+WS5LnHiSSuc8p68u8cbvv4UbiOBvFdNSwtLy2QhoG3UsHC53WBGaYdgjzXQ0szSwueA4Hbq2LjY78gc1Y+hlMJJKutIznmeGH7lpsO+w7k0zphHJSVts4JmB5+6cdW56ifFW/Nd9Kr4u3U2Who2RNbHG1rWiwAaAO/ioWlulDKCQxsgY/mmsMr5H2zdawaLi+0bLrItdexG/MFRMawSkrXsfUMfrtAGtG5o1gNmsCNvSFTx5T2tyl9MpEI6mljqI22bI36THZgZlpHTmCqu0n0VYMQpWw2YKguJFvoscwFziB0gK0XztbEyGJupGwAAXue1arV/WYpAB/IppnHoc8hre8F3cupnJl+1zcd492r8ntMH42zgyWod+Uut4kL6BVQ8lWAzx19RNLE9g1XahcPO15dY2/IO9W8teN2yZTQiIu3IiIgIiICIiAiIgIiIC6SxhwIK7oos3NJl0rDTXDZWyMngF5qV5Ib7WI+eztC74TpDTVLbtka13pMkIa9rt4IK2rSGK0gd6w8QtZr8CpZ3a0sETnesWAP/MM1gz1L01ux3ZuJU1bEwXfJG0fae0LWcRxR+IXp6O/NnKWpsQxrN7Yz6TllYtFqFpv/DRG3rtL/B11lmMDQA0AAbAAAB2Bcy4zw6st8vKhpGQRMiYLNjaGjqA3rispmTxPjfYskaWmx3H5rpiET3ABtrb87XXhQUsjHXNgN4vtXG/brU0wmH4o/D7U9ZfmxlDU2JY5u5sh9FwWzQ1sTxdkkbh9l7SvV7A4EOAIO0EAg9ixMui1C43/AIaIX9RpZ4NIXVuN8uZLPDti2kNNTNu+RrnejGwhz3O3AAb1H0WopfraicWmqXA6vs4h5jOy9+1TaDAqWB2tFBE13rBgL/zHNZmgi15WDiR3DNTueIjv5rZMOptRgvtsFLRF6GOMxmow5ZXK7oiIunIiIgIiICIiAiIgIiICIiDHY5T68Vxtbn2b1rK3da9i2Flt3sH0d4G7/wBLL9Rx2/ujTwck/wAaxK8ampjibrSPYxvrPcGi/WV7LxrKVkzHRyNBa4WIKyT8tVRPL1J/U03+4j/dPL1J/U03+4j/AHVe41oLUROJhHOxk5WID2jg4b+sLzwrQeqlcOcbzTL5l5Gtb7LRtPXZaPi49b6lHyZ71pZ9JWxTAmKSN4G0xva4A9NlIUTC8OjpomxxizR3k7yelS1nut9l03ruLM6O0/0nPO4WHXvUHD6B0p4NG0/stphiDGhrRYBaODjtvVVPNyanTHdERbWMREQEREBERAREQEREBERAREQEKIg1vSGmZCGvFwHOsRbIG179GxYsG6zWldTG1sTHkXkeQAd9m5/FatJG+LNubeB3LBzYyZdm7hytx7sgihxYi07bjxC7Pr2DZc9QVOlu0pe+FRNml1LmwBJt8LrEtfJLs+i3jxWY0fnjjqGRXs57XWG823ld8eO8pHGeWsbW1xRhoAaLAcF3RF6TzxERAREQEREBERAREQEREBERARFicZ0ipqQfWSDW3Mbm89m7tQZZY3F8epqRt5pWtO5oN3nqaM1XWPcoM8ocIRzTeO2Q9u5aNNK57i5xLnHaXEkntKDa9MNKG18kZja5rYg7VLjmSSM8tmwLLaPYtz7NVx+saM/tDitBpt/YplLUOje17TYg/wDwVfJx9cd8efRVhyUjHbR3ZLiOiYN1+s3Xnhde2eMObt9Ieq5SZpWsaXONg0XJPBefZZdN8ss28MRrWwRl7t2QHF24BaXTY0+OqbUnMtcDa/o7NUdi64ziRqJL7GjzRwHHrWNm2FbuHi6Zu+WLl5Oq6nhc+B6Z0lVYB4Y8+hKQ0k8AdhWxL5rW16P6ZVVOANbXYPQkJOXQdoVypdKLWcD01pqmzXHmnn0ZNhP2XbFsoN0HKIiAiIgIiICIiAiLh7gASSABtJNgAg5WPxfGYKVutK8Dg0Zud1BajpNp+G60dLYnMGUi7R+Eb+tV5VVT5XF8jnOcdpcblBtmPafTTXbAOaZxveRw693YtQkeXElxJJ2km5K6rpK+wRDxnfc24LyRES9ac59ikqLB5wUpEJ2EYi6nkDhmDk5vEfup2kmLGU8224YLE3Fi4/svPCcP2PePwg/EqXiVCJRcZOGw8egrVj/Drlj8nv7Kb9ZMb0emuLynOS9ntIJBFiF4VOwLL4XRHXeN9iuiIlNBWwYFpdU0tgHa7PUkJIt0HaFrNO/cvdELnwDSynqwADqSb2PIvf7J3rPr55aSDcZHoW5aN6dyw2ZUXkj2a38xo6/SCJWoijUFdHOwPicHNO8HZ0HgVJQEREBERBw5wAJOQG08Aqk0y0rfVPdHGS2FptYGxktvd0dC3PlExTmKQsabOmOqOOr6R+XaqiQEREQLxmjJzXsiCERZcKa4X2qNK0DYiXWM5hTFCCmoM9g9XrN1Sc2+LVLrKkRsLu4cSsVgDfpPPAD4qbjbbxHoc0/L5r2+Lkz/AE3V7jzOTDH5temvyPLiSdpUap2hSFGqNvYvEt29KPJFy3pUpjANiJeMcR6lJREQIiIMngOOTUcgfG42PnMJ+i8dI49KubB8SZVQslZscNm8O3gqhlvXJbimrLJTk5SDWb0PG3vHwRKzEREBEXDnWBJ3AlBVHKZXc5ViMHKFgH9xzPy7lqKmYzVc9UTSevI49l8lDRAiIgLhxsuVw4XFkEeSa+xeS5IsuESKY05BQ1LiP0Qgz2AM+i88SPgpmIsvFIPs/DP5LywZloh0knxt8lMkbcEcQV7/AA4f28n4eTyZf1d/lqKiTecVLIsobzmV4FerHVd2PIXRESlxyAruvKBth1r1RAiIgKbglaYKiGT1Xtv+G+fgoSIPoVjrgEbwCuVh9EaznqKnfv1NU/iadU/BZhEixek9XzNHUP3iNwHWch8VlFp3KhValG1ntJWj+1oLj42QVUiIiBERAREQR6hu9eKmObcWUQhEuFJpzl2qMpNIL5cSFMm0Vt1C20UY+yPEXXuuGiwA4ALlfTYTWMjxcru2tUrG6r3jgSsasvjTbSP6QD4LDr5zlx6c7Hscd3jKLtG25XVSYG2F+KrdvVERECIiAiIgtDkrqtanlj9SS46nD9wt2VWcl1Vq1MjPaRnvabq00SKtOVWqvNBH6jC49bj+wVlqPPQxPN3xsceLmAlBQNksr68lU/sYvdtTyVT+xi921BQtksr68lU/sYvdtTyVT+xi921BQtksr68lU/sYvdtTyVT+xi921BQtlHqGb19BeSqf2MXu2rpLgtM4WdBERw5tqD56U3CG3laOkeBurx/01Rf00PuwvWnwGljN2QRA8QwLrG6sqMpuaV0is7+Ci9mz8gT+Ci9mz8gXq/zLH/lg/R37qR0lbZwPFvzWBX0PU4RTyCz4YnDpYFG/01Rf00PuwvN5s5nncp7bePHpxkUHG25UyyvSHAKRhu2nhH/bC9vJVP7GL3bVU7ULZLK+vJVP7GL3bU8lU/sYvdtQULZLK+vJVP7GL3bU8lU/sYvdtQULZLK+vJVP7GL3bU8lU/sYvdtQU7ohVc1W07txeGnqdl81dyiNwuAG4hiuPu27VLQcoiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiIP/9k=" alt="John Doe">
+                <h4>Mr.Athula samarasingha </h4>
+                <p>CEO & Founder</p>
+            </div>
+            <div class="team-member">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRcDMH-p9N9qRFmCf50jAu2IDAmxH3LnZvug&usqp=CAU" alt="Jane Smith">
+                <h4>Mr.Prebath rathnayaka.</h4>
+                <p>Product Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-fJqhHNkjwk1xNGQmzF-nS21FT_U1aa6B8kHFzeXsOKFk8I_A_4H9ZKsRlXWelW3Fw_g&usqp=CAU" alt="Jane Smith">
+                <h4>Jane Smith</h4>
+                <p>Product Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq_VnOwTq92SHl1KCbc1wtPZK4GJzMj6bBVmcIncPh5KTfYLS8KlRwho8N3o68wbH2X2c&usqp=CAU" alt="Jane Smith">
+                <h4>Jane Smith</h4>
+                <p>Product Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScgFzgWEg75a7HpDpr4rlOlJROB594aqDiiUGfIbMBdQ0fDzuIxmzGcsxcCLaHXxQXz7I&usqp=CAU" alt="Jane Smith">
+                <h4>Jane Smith</h4>
+                <p>Product Manager</p>
+            </div>
+            <!-- Add more team members as needed -->
+        </div>
+    </section>
+
+    <section id="products">
+        
+        <h2>Our Products</h2>
+        <div class="product-item">
+            <img src="https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9say1saXZlLTIxLnNsYXRpYy5uZXQva2YvU2Q5NDJiNWRkNzk3NjQwMmRiMjgxZjAwZTE1MDRmOTBmTi5qcGc=_400x400q75.png_.webp" alt="Gaming Mouse">
+            <h3>Gaming Mouse</h3>
+            <p>High-precision gaming mouse with customizable buttons and RGB lighting.</p>
+            <p>Rs:3500.00</p>
+        </div>
+        <div class="product-item">
+            <img src="Image/m 02.webp" alt="Mechanical Keyboard">
+            <h3>Gaming Mouse</h3>
+            <p>Fantech cruiser wg11 wireless gaming Mouse white colour mouse Bluetooth Mouse</p>
+            <p>Rs:2000.00</p>
+        </div>
+        <div class="product-item">
+            <img src="Image/k 01.webp" alt="Mechanical Keyboard">
+            <h3>Mechanical Keyboard</h3>
+            <p>RGB Gamming Keyboard LDK.ai R260 Suspension 7 Colorful Backlit 104 Keys USB Wired Gaming Keyboard</p>
+            <p>Rs:3800.00</p>
+        </div>
+        <div class="product-item">
+            <img src="Image/k 02.webp" alt="Mechanical Keyboard">
+            <h3>Mechanical Keyboard</h3>
+            <p>T-WOLF TF200 mechanical feel Gaming Keyboard USB Ergonomic Mouse Keyboard for PC Laptop Gaming</p>
+            <p>Rs:2800.00</p>
+        </div>
+        <div class="product-item">
+            <img src="Image/vga 01.webp" alt="Mechanical Keyboard">
+            <h3>VGA card</h3>
+            <p>GEFORCE GTX 1650 4GB GDDR5 Graphics Card | 1650 VGA card | GTX 1650 | Gaming |</p>
+            <p>48,000.00</p>
+        </div>
+        <div class="product-item">
+            <img src="Image/vga 02.webp" alt="Mechanical Keyboard">
+            <h3>Graphic card Holder</h3>
+            <p>ROG Graphic card Holder VGA Bracket Gaming RGB GPU holder ARGB Aura Sync</p>
+            <p>Rs:2800.00</p>
+        </div>
+        <div class="product-item">
+            <img src="Image/gs1.webp" alt="Mechanical Keyboard">
+            <h3>computer speakers</h3>
+            <p>Kisonli T-008A Gaming High Quality Bass Speaker</p>
+            <p>Rs:3000.00</p>
+        </div>
+        <div class="product-item">
+            <img src="Image/gs.webp" alt="Mechanical Keyboard">
+            <h3>computer speakers</h3>
+            <p>Jedel RGB gaming USB computer speakers</p>
+            <p>Rs:2000.00</p>
+        </div>
+        <div class="product-item">
+            <img src="Image/rm 01.webp" alt="Mechanical Keyboard">
+            <h3>Ram Cad</h3>
+            <p>Kllisre DDR3 DDR4 8GB 4GB 16GB Laptop Ram 1333 1600 2400 2666 3200 DDR3L 204pin Sodimm Notebook Memory</p>
+            <p>Rs:1900.00</p>
+        </div>
+        <div class="product-item">
+            <img src="Image/ram 02.webp" alt="Mechanical Keyboard">
+            <h3>Ram Cad</h3>
+            <p>PUSKILL Memoria Ram Notebook DDR4 DDR3L 16GB 8GB 4GB 32GB 3200 2666 2400 1600 1333 Sodimm Laptop Memory</p>
+            <p>Rs:1800.00</p>
+        </div>
+        <div class="product-item">
+            <img src="Image/c fan.webp" alt="Mechanical Keyboard">
+            <h3>Gaming Cooler</h3>
+            <p>Manmu Big Promotion 120mm PC Case Fan RGB LED Computer Air Cooling Fans 4pin Gaming Cooler</p>
+            <p>Rs:4100.00</p>
+        </div>
+        <div class="product-item">
+            <img src="Image/cfan 1.webp" alt="Mechanical Keyboard">
+            <h3>Gaming Cooler</h3>
+            <p>Aigo CPU Cooler 2 4 Heat Pipes PC Radiator Cooling 3PIN PWM Silent Rgb Fan For Intel 1700 1150 1155 1156 1366 AM2/AM3/AM4 AMD</p>
+            <p>Rs:3800.00</p>
+        </div>
+        <div class="product-item">
+            <img src="Image/p2.webp" alt="Mechanical Keyboard">
+            <h3>Processor</h3>
+            <p>i7 3rd Generation (3770) i7 3rd gen Processor with 1 year warranty</p>
+            <p>Rs:1600.00</p>
+        </div>
+        <div class="product-item">
+            <img src="Image/p.webp" alt="Mechanical Keyboard">
+            <h3>Processor</h3>
+            <p>i7 3rd gen processor</p>
+            <p>Rs:21000.00</p>
+        </div>
+        <div class="product-item">
+            <img src="Image/pwc 1.webp" alt="Mechanical Keyboard">
+            <h3>Power Cables</h3>
+            <p>Power Cable For Computer Monitor/CPU 3 Pin</p>
+            <p>Rs:1300.00</p>
+        </div>
+        <div class="product-item">
+            <img src="Image/pwc.webp" alt="Mechanical Keyboard">
+            <h3>Power Cables</h3>
+            <p>Laptop Power Cable Laptop Power Code 3 PIN Fused</p>
+            <p>Rs:1800.00</p>
+        </div>
+        <div class="product-item">
+            <img src="Image/mb 02.webp" alt="Mechanical Keyboard">
+            <h3>Motherboard</h3>
+            <p>MACHINIST X99 Motherboard kit with Intel Xeon E5 2680 V3 CPU + DDR4 8GBx2 2133MHz Dual-Channel RAM Set Computer Combo X99 PR9
+                <p>Rs:12000.00</p>
+            </p>
+
+        </div>
+        <div class="product-item">
+            <img src="Image/mb 01.webp" alt="Mechanical Keyboard">
+            <h3>Motherboard</h3>
+             <p>MACHINIST H61 Motherboard LGA 1155 DDR3 RAM Compatible With Intel Core CPUs 2nd And 3rd Generations Supports M.2 NVME SDD</p>
+             <p>Rs:8000.00</p>
+            </div>
+        <div class="product-item">
+            <img src="Image/m1.webp" alt="Mechanical Keyboard">
+            <h3>Monitor</h3>
+            <p>Falcon 19 Inch LED PC Monitor Brand New, PC Screen 1366x768 with HDMI&VGA Interface, 60Hz, Wide Viewing Angle 170°, LED Monitor Brand New Monitor [2 YEARS WARRANTY]</p>
+            <p>Rs:28000.00</p>
+        </div>
+    
+        <div class="product-item">
+            <img src="Image/M.webp" alt="Mechanical Keyboard">
+            <h3>Monitor</h3>
+            <p>MSI PRO MP251 24.5" INCH 100HZ 1MS FHD ULTRA SLIM FRAMELESS MONITOR</p>
+            <p>Rs:55000.00</p>
+        </div>
+        <!-- Add more products as needed -->
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <img src="https://www.superoffice.com/globalassets/blog/2017/10/technical-support.jpg?v=49906d" alt="Technical Support">
+            <h3>Technical Support</h3>
+            <p>Expert technical support to help you with any issues related to your computer accessories.</p>
+        </div>
+        <div class="service-item">
+            <img src="https://www.superoffice.com/globalassets/blog/2017/10/technical-support.jpg?v=49906d" alt="Product Installation">
+            <h3>Product Installation</h3>
+            <p>Professional installation services for all our products to ensure optimal performance.</p>
+        </div>
+        <!-- Add more services as needed -->
+    </section>
+
+    <section id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-item">
+            <p>"This shop provided me with excellent products and support. Their customer service is top-notch!"</p>
+            <h4>- Ramesh K.</h4>
+        </div>
+        <div class="testimonial-item">
+            <p>"The best place to buy computer accessories in Sri Lanka. Highly recommend their products."</p>
+            <h4>- Anjali S.</h4>
+        </div>
+        <!-- Add more testimonials as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="your-email-script.php" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hiru computers. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><img src="Image/fb 02.png" alt="Facebook"></a>
+            <a href="#"><img src="Image/tw logo.png" alt="Twitter"></a>
+            <a href="#"><img src="Image/inster logo.png" alt="Instagram"></a>
+        </div>
+    </footer>
+    <script src="assets/scripts.js"></script>
+</body>
+</html>
